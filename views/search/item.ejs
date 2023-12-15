@@ -1,0 +1,23 @@
+<div class="col">
+  <div class="card">
+    <a href="/groups/<%= id %>" class="text-body nav-link">
+      <!-- <$% if (logo && logo.trim().length > 0) { %> -->
+      <% if (typeof logo === 'string' && logo.trim().length > 0) { %>
+
+        <img class="card-img-top img-height eyecatch" src="<%= logo %>" alt="...">
+        <span class="cat-name"><%= label %></span>
+      <% } else if (img_url_one && img_url_one.trim().length > 0) { %>
+        <img class="card-img-top img-height" src="<%= img_url_one %>" alt="...">
+        <span class="cat-name"><%= label %></span>
+      <% } else { %>
+        <img class="card-img-top img-height" src="/public/images/dummy/286x180.png" alt="...">
+        <span class="cat-name"><%= label %></span>
+      <% } %>
+      <div class="card-body">
+        <h5 class="card-title"><%- name %></h5>
+        <p class="card-text"><%- address %></p>
+        <p class="card-text"><%- content %></p>
+      </div>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+.image-radius {
+  border-bottom-left-radius: 30px; /* 丸みの大きさを調整するために、この数値を変更することができます */
+}
+
+.card {
+  border: 0px !important;
+}
+
+.ml-custom {
+  margin-left: 1rem !important;
+}
+
+.card-img, .card-img-top {
+  border-top-left-radius: calc(.75rem - 1px) !important;
+  border-top-right-radius: calc(.75rem - 1px) !important;
+}
+
+.card-body {
+  background-color: #D6D242;
+  border-bottom-left-radius: calc(.75rem - 1px);
+  border-bottom-right-radius: calc(.75rem - 1px);
+}
+
+.btn-color {
+  color: white;
+  background-color: #d64251;
+  border-color: #d64251;
+}
+
+@media screen and (min-width: 640px){
+	/* PC時 */
+	.br-pc {
+	display:inline;
+	}
+	.br-sp {
+		display:none;
+	}
+}
+
+@media screen and (max-width: 640px){
+	/* SP時 */
+	.br-pc {
+	display:none;
+	}
+	.br-sp {
+		display:inline;
+	}
+}

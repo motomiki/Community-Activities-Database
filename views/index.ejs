@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<%- include("./_share/metadata.ejs") %>
+  <title>ねりキッズ探検団</title>
+	<%- include("./_share/stylesheets.ejs") %>
+	<link rel="stylesheet" href="/public/stylesheets/index.css">
+</head>
+
+<body>
+	<div class="outerfreme">
+		<main role="main" class="container d-flex justify-content-md-center">
+				<div class="row">
+					<div class="col-md-6">
+						<!-- <h1 class="mt-5 text-left">ねりキッズ探検団</h1> -->
+						<h1 class="mt-5 text-left">ねりキッズ<ruby>探検団<rt>たんけんだん</rt></ruby></h1>
+						<p class="text-left">Powered by <ruby>放課後<rt>ほうかご</rt></ruby>キャンパスクラブ</p>
+
+							<!-- パソコン用のタブ：mdサイズ以上のデバイスでのみ表示 -->
+							<div class="my-5 d-none d-md-block">
+								<h5 class="card-title"><ruby>子<rt>こ</rt></ruby>どもたちの<ruby>探検<rt>たんけん</rt></ruby><ruby>心<rt>しん</rt></ruby>を<ruby>刺激<rt>しげき</rt></ruby>する<ruby>練馬区<rt>ねりまく</rt></ruby>の<ruby>冒険<rt>ぼうけん</rt></ruby>データベース！<br><ruby>楽<rt>たの</rt></ruby>しみながら<ruby>地域<rt>ちいき</rt></ruby>を<ruby>発見<rt>はっけん</rt></ruby>しよう
+								</h5>
+								<p class="card-text"><ruby>家族<rt>かぞく</rt></ruby>が<ruby>笑顔<rt>えがお</rt></ruby>になる<ruby>場所<rt>ばしょ</rt></ruby>、<ruby>練馬区<rt>ねりまく</rt></ruby>で。<br><ruby>子<rt>こ</rt></ruby>どもたちの<ruby>楽<rt>たの</rt></ruby>しい<ruby>居場所<rt>いばしょ</rt></ruby>と、<ruby>子育<rt>こそだ</rt></ruby>て<ruby>世代<rt>せだい</rt></ruby>の<ruby>支<rt>ささ</rt></ruby>え<ruby>合<rt>あ</rt></ruby>いのコミュニティ。<br>ここで、みんなの<ruby>心地<rt>ここち</rt></ruby>よい<ruby>居場所<rt>いばしょ</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけよう！
+								</p>
+							</div><!-- END -->
+
+							<p><i class="fas fa-file-word"></i> キーワード<ruby>検索<rt>けんさく</rt></ruby></p>
+							<form action="/search">
+								<div class="form-group">
+									<div class="input-group my-3">
+										<input type="text" class="form-control" id="keyword" name="keyword" placeholder="キーワードをひとつ入力してください" autofocus="autofocus" />
+										<div class="input-group-append">
+											<button class="btn btn-secondary" type="submit"><i class="fa fa-fw fa-search"></i></button>
+										</div>
+									</div>
+								</div>
+							</form>
+					</div>
+
+					<!-- パソコン用のタブ：mdサイズ以上のデバイスでのみ表示 -->
+					<div class="card text-bg-dark col-md-6 d-none d-md-block">
+						<img src="public/images/top-eye_catching.jpg" class="card-img image-radius" alt="...">
+					</div><!-- END -->
+
+					<!-- スマホ用のタブ：mdサイズ未満のデバイスでのみ表示 -->
+					<div class="card text-bg-dark col-md-6 d-block d-md-none">
+						<img src="public/images/top-eye_catching.jpg" class="card-img image-radius" alt="...">
+						<div class="card-img-overlay text-white mt-5 ml-custom">
+							<h5 class="card-title"><ruby>子<rt>こ</rt></ruby>どもたちの<ruby>探検<rt>たんけん</rt></ruby><ruby>心<rt>しん</rt></ruby>を<ruby>刺激<rt>しげき</rt></ruby>する<ruby>練馬区<rt>ねりまく</rt></ruby>の<ruby>冒険<rt>ぼうけん</rt></ruby>データベース！<ruby>楽<rt>たの</rt></ruby>しみながら<ruby>地域<rt>ちいき</rt></ruby>を<ruby>発見<rt>はっけん</rt></ruby>しよう</h5>
+							<p class="card-text"><ruby>家族<rt>かぞく</rt></ruby>が<ruby>笑顔<rt>えがお</rt></ruby>になる<ruby>場所<rt>ばしょ</rt></ruby>、<ruby>練馬区<rt>ねりまく</rt></ruby>で。<ruby>子<rt>こ</rt></ruby>どもたちの<ruby>楽<rt>たの</rt></ruby>しい<ruby>居場所<rt>いばしょ</rt></ruby>と、<ruby>子育<rt>こそだ</rt></ruby>て<ruby>世代<rt>せだい</rt></ruby>の<ruby>支<rt>ささ</rt></ruby>え<ruby>合<rt>あ</rt></ruby>いのコミュニティ。ここで、みんなの<ruby>心地<rt>ここち</rt></ruby>よい<ruby>居場所<rt>いばしょ</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけよう！</p>
+						</div>
+					</div><!-- END -->
+
+				</div>
+			</main>
+			<div class="container">
+				<div class="row py-5">
+					<div class="col-md-12">
+						<h2 class="text-center"><ruby>住<rt>す</rt></ruby>んでいる<ruby>地<rt>ち</rt></ruby><ruby>区<rt>く</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んでね</h2>
+					</div>
+				</div>
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+					<div class="col mb-3">
+						<div class="card">
+							<img src="public/images/district-1.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title"><ruby>第<rt>だい</rt></ruby>１<ruby>地域<rt>ちいき</rt></ruby></h5>
+								<p class="card-text"><ruby>春日町<rt>かすがちょう</rt></ruby>２<ruby>丁目<rt>ちょうめ</rt></ruby>・４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+										<ruby>北<rt>きた</rt></ruby><ruby>町<rt>まち</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～８<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+										<ruby>田柄<rt>たがら</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+										<ruby>錦<rt>にしき</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>・２<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+										<ruby>羽沢<rt>はざわ</rt></ruby>３<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+										<ruby>早宮<rt>はやみや</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+										<ruby>氷川台<rt>ひかわだい</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+										<ruby>平和台<rt>へいわだい</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～４<ruby>丁目<rt>ちょうめ</rt></ruby></p>
+										<a href="/district-1" class="btn btn-color" role="button"><ruby>一<rt>いち</rt></ruby><ruby>覧<rt>らん</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>する</a>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-3">
+						<div class="card">
+							<img src="public/images/district-2.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title"><ruby>第<rt>だい</rt></ruby>２<ruby>地域<rt>ちいき</rt></ruby></h5>
+								<p class="card-text"><ruby>旭丘<rt>あさひがおか</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>・２<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>小竹<rt>こたけ</rt></ruby><ruby>町<rt>ちょう</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>・２<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>栄町<rt>さかえちょう</rt></ruby><br>
+									<ruby>桜台<rt>さくらだい</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～６<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>豊玉<rt>とよたま</rt></ruby><ruby>上<rt>かみ</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>・２<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>豊玉<rt>とよたま</rt></ruby><ruby>北<rt>きた</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～６<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>豊玉<rt>とよたま</rt></ruby><ruby>中<rt>なか</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>豊玉<rt>とよたま</rt></ruby><ruby>南<rt>みなみ</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～３<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>中村<rt>なかむら</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～３<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>中村<rt>なかむら</rt></ruby><ruby>北<rt>きた</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>中村<rt>なかむら</rt></ruby><ruby>南<rt>みなみ</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～３<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>練馬<rt>ねりま</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>・２<ruby>丁目<rt>ちょうめ</rt></ruby>・４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>羽沢<rt>はざわ</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>・２<ruby>丁目<rt>ちょうめ</rt></ruby></p>
+									<a href="/district-2" class="btn btn-color" role="button"><ruby>一<rt>いち</rt></ruby><ruby>覧<rt>らん</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>する</a>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-3">
+						<div class="card">
+							<img src="public/images/district-3.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title"><ruby>第<rt>だい</rt></ruby>３<ruby>地域<rt>ちいき</rt></ruby></h5>
+								<p class="card-text"><ruby>春日町<rt>かすがちょう</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>・３<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+								　　　５<ruby>丁目<rt>ちょうめ</rt></ruby>・６<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>向山<rt>こうやま</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>高野台<rt>たかのだい</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>・２<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>高松<rt>たかまつ</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>貫井<rt>ぬくい</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～５<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>練馬<rt>ねりま</rt></ruby>３<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>富士見台<rt>ふじみだい</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>南田中<rt>みなみたなか</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～３<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>谷原<rt>やはら</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby></p>
+									<a href="/district-3" class="btn btn-color" role="button"><ruby>一<rt>いち</rt></ruby><ruby>覧<rt>らん</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>する</a>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-3">
+						<div class="card">
+							<img src="public/images/district-4.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title"><ruby>第<rt>だい</rt></ruby>４<ruby>地域<rt>ちいき</rt></ruby></h5>
+								<p class="card-text"><ruby>旭町<rt>あさひちょう</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～３<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>高松<rt>たかまつ</rt></ruby>５<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>田柄<rt>たがら</rt></ruby>５<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>光<rt>ひかり</rt></ruby>が<ruby>丘<rt>おか</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～７<ruby>丁目<rt>ちょうめ</rt></ruby></p>
+									<a href="/district-4" class="btn btn-color" role="button"><ruby>一<rt>いち</rt></ruby><ruby>覧<rt>らん</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>する</a>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-3">
+						<div class="card">
+							<img src="public/images/district-5.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title"><ruby>第<rt>だい</rt></ruby>５<ruby>地域<rt>ちいき</rt></ruby></h5>
+								<p class="card-text"><ruby>大泉町<rt>おおいずみまち</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～５<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>大泉<rt>おおいずみ</rt></ruby><ruby>学園町<rt>がくえんちょう</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～９<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>高松<rt>たかまつ</rt></ruby>６<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>土支田<rt>どしだ</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>西<rt>にし</rt></ruby><ruby>大泉<rt>おおいずみ</rt></ruby>２<ruby>丁目<rt>ちょうめ</rt></ruby>～６<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>西<rt>にし</rt></ruby><ruby>大泉町<rt>おおいずみまち</rt></ruby><br>
+									<ruby>三原台<rt>みはらだい</rt></ruby>２<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>谷原<rt>やはら</rt></ruby>２<ruby>丁目<rt>ちょうめ</rt></ruby>～６<ruby>丁目<rt>ちょうめ</rt></ruby></p>
+									<a href="/district-5" class="btn btn-color" role="button"><ruby>一<rt>いち</rt></ruby><ruby>覧<rt>らん</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>する</a>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-3">
+						<div class="card">
+							<img src="public/images/district-6.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title"><ruby>第<rt>だい</rt></ruby>６<ruby>地域<rt>ちいき</rt></ruby></h5>
+								<p class="card-text"><ruby>大泉町<rt>おおいずみまち</rt></ruby>６<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>下<rt>しも</rt></ruby><ruby>石神井<rt>しゃくじい</rt></ruby>３<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>石神井台<rt>しゃくじいだい</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>・３<ruby>丁目<rt>ちょうめ</rt></ruby>・６<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>石神井町<rt>しゃくじいまち</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～８<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>高野台<rt>たかのだい</rt></ruby>３<ruby>丁目<rt>ちょうめ</rt></ruby>～５<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>西<rt>にし</rt></ruby><ruby>大泉<rt>おおいずみ</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>東<rt>ひがし</rt></ruby><ruby>大泉<rt>おおいずみ</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～７<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>南<rt>みなみ</rt></ruby><ruby>大泉<rt>おおいずみ</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～６<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>南<rt>みなみ</rt></ruby><ruby>田中<rt>たなか</rt></ruby>４<ruby>丁目<rt>ちょうめ</rt></ruby>・５<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>三原台<rt>みはらだい</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>・３<ruby>丁目<rt>ちょうめ</rt></ruby></p>
+									<a href="/district-6" class="btn btn-color" role="button"><ruby>一<rt>いち</rt></ruby><ruby>覧<rt>らん</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>する</a>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-3">
+						<div class="card">
+							<img src="public/images/district-7.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title"><ruby>第<rt>だい</rt></ruby>７<ruby>地域<rt>ちいき</rt></ruby></h5>
+								<p class="card-text"><ruby>上<rt>かみ</rt></ruby><ruby>石神井<rt>しゃくじい</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>上<rt>かみ</rt></ruby><ruby>石神井<rt>しゃくじい</rt></ruby><ruby>南町<rt>みなみちょう</rt></ruby><br>
+									<ruby>下<rt>しも</rt></ruby><ruby>石神井<rt>しゃくじい</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>・２<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									　　　　４<ruby>丁目<rt>ちょうめ</rt></ruby>～６<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>石神井台<rt>しゃくじいだい</rt></ruby>２<ruby>丁目<rt>ちょうめ</rt></ruby>・４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									　　　　５<ruby>丁目<rt>ちょうめ</rt></ruby>・７<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									　　　　８<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>関町<rt>せきまち</rt></ruby><ruby>東<rt>ひがし</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>・２<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>関町<rt>せきまち</rt></ruby><ruby>北<rt>きた</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～５<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>関町<rt>せきまち</rt></ruby><ruby>南<rt>みなみ</rt></ruby>１<ruby>丁目<rt>ちょうめ</rt></ruby>～４<ruby>丁目<rt>ちょうめ</rt></ruby><br>
+									<ruby>立野町<rt>たてのちょう</rt></ruby></p>
+									<a href="/district-7" class="btn btn-color" role="button"><ruby>一<rt>いち</rt></ruby><ruby>覧<rt>らん</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>する</a>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-3">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title mt-5"><ruby>都市<rt>とし</rt></ruby><ruby>計画<rt>けいかく</rt></ruby>マスタープランの<ruby>地域区分<rt>ちいきくぶん</rt></ruby>を<ruby>参考<rt>さんこう</rt></ruby>にしています。</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<%- include("./_share/advertisement.ejs") %>
+		<%- include("./_share/footer.ejs") %>
+	</div>
+	<%- include("./_share/javascripts.ejs") %>
+</body>
+
+</html>

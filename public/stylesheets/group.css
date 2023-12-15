@@ -1,0 +1,26 @@
+#mapid { height: 400px; }
+
+.frame-body {
+  background-color: #D6D242;
+  border-top-left-radius: 30px;
+}
+
+.frame-body-n {
+  background-color: #D6D242;
+}
+
+.info-body {
+  background-color: #F8F7EE;
+  border-radius: 20px;
+}
+
+@media(min-width: 768px){
+  a[href^="tel:"]{
+    pointer-events: none;
+    color: #D64251;
+  }
+}
+
+.word-break {
+  word-break: break-all;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <%- include("../_share/metadata.ejs") %>
+  <title>地域団体情報</title>
+  <%- include("../_share/stylesheets.ejs") %>
+  <link rel="stylesheet" href="/public/stylesheets/group.css" />
+</head>
+
+<body>
+  <div class="outerframe">
+    <%- include("../_share/navbar.ejs") %>
+    <main class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <% if (logo && logo.trim().length > 0) { %>
+          <div class="col-md-3">
+            <img src="<%= logo %>" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-8">
+            <h1 class="display-4 ps-1 pt-5"><%- name %></h1>
+          </div>
+          <% } else { %>
+            <div class="col-md-11">
+              <h1 class="display-4 ps-1 pt-5"><%- name %></h1>
+            </div>
+          <% } %>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-1"></div>
+        <div class="col-md-11 frame-body">
+          <h2 class="border-bottom mt-2 pb-2"><i class="fas fa-exclamation-circle"></i> <ruby>団体<rt>だんたい</rt></ruby>の<ruby>詳細説明<rt>しょうさいせつめい</rt></ruby></h2>
+          <p class="p-3"><%- explanation %></p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-11 frame-body-n">
+          <h2 class="border-bottom mt-2 pb-2"><i class="fa fa-fw fa-book"></i> <ruby>活動内容<rt>かつどうないよう</rt></ruby></h2>
+          <p class="p-3"><%- content %></p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+        <% if (img_url_one && img_url_one.trim().length > 0 || img_url_two && img_url_two.trim().length > 0) { %>
+          <div class="row mt-5">
+            <% if (img_url_one && img_url_one.trim().length > 0) { %>
+              <div class="col-md-6 mb-3">
+                <img src="<%= img_url_one %>" class="img-fluid" alt="...">
+              </div>
+            <% } %>
+            <% if (img_url_two && img_url_two.trim().length > 0) { %>
+              <div class="col-md-6">
+                <img src="<%= img_url_two %>" class="img-fluid" alt="...">
+              </div>
+            <% } %>
+          </div>
+        <% } %>
+
+        <% if (goolge_map && goolge_map.trim().length > 0) { %>
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <%- goolge_map %>
+            </div>
+            <div class="col-md-6">
+              <h2 class="border-bottom mt-2 pb-2"><i class="fas fa-map-marked-alt"></i> <ruby>住所<rt>じゅうしょ</rt></ruby></h2>
+              <p class="pt-3"><%- address %></p>
+            </div>
+          </div>
+        <% } else { %>
+            <div class="col-md-12">
+              <h2 class="border-bottom mt-2 pb-2"><i class="fas fa-map-marked-alt"></i> <ruby>住所<rt>じゅうしょ</rt></ruby></h2>
+              <p class="pt-3"><%- address %></p>
+            </div>
+            <% } %>
+
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div>
+            <table class="table table-bordered">
+              <colgroup>
+                <col class="bg-light" style="width: 10rem">
+                <col class="">
+              </colgroup>
+              <tr>
+                <th><ruby>活動日時<rt>かつどうにちじ</rt></ruby></th>
+                <td><%- activity_day %></td>
+              </tr>
+              <tr>
+                <th><ruby>対象年齢<rt>たいしょうねんれい</rt></ruby></th>
+                <td><%- age %></td>
+              </tr>
+              <tr>
+                <th><ruby>通<rt>かよ</rt></ruby>う<ruby>条件<rt>じょうけん</rt></ruby></th>
+                <td><%- conditions %></td>
+              </tr>
+              <tr>
+                <th>ウェブサイトURL</th>
+                <td>
+                  <% if (url && url.trim().length > 0) { %>
+                    <a href="<%= url %>" target="_blank" rel="noopener noreferrer" class="word-break"><%= url %> <i class="fas fa-external-link-alt"></i></a>
+                    <% } else { %>
+                  <% } %>
+                </td>
+              </tr>
+              <tr>
+                <th>ソーシャルメディア</th>
+                <td>
+                  <% if (social_media && social_media.trim().length > 0) { %>
+                    <a href="<%= social_media %>" target="_blank" rel="noopener noreferrer" class="word-break"><%= social_media %> <i class="fas fa-external-link-alt"></i></a>
+                    <% } else { %>
+                  <% } %>
+                </td>
+              </tr>
+              <tr>
+                <th>メールアドレス</th>
+                <td>
+                  <div><%= email %></div>
+                </td>
+              </tr>
+              <tr>
+                <th><ruby>電話番号<rt>でんわばんごう</rt></ruby></th>
+                <td>
+                  <% if (tel && tel.trim().length > 0) { %>
+                    <a href="tel:<%= tel %>" class="text-decoration-none"><i class="fas fa-phone-square"></i> <%= tel %></a>
+                    <% } else { %>
+                  <% } %>
+                </td>
+              </tr>
+              <th><ruby>登録日<rt>とうろくび</rt></ruby></th>
+              <td>
+                <div><%- created %></div>
+              </td>
+            </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6 pt-3 info-body">
+          <h3 class="border-bottom fs-5 mt-1 pb-2"><i class="fas fa-people-carry"></i> ボランティア<ruby>募集<rt>ぼしゅう</rt></ruby></h3>
+
+          <% if (v_url && v_url.trim().length > 0) { %>
+            <p class="pt-3 pb-2"><%- volunteer %><br><a href="<%= v_url %>" target="_blank" rel="noopener noreferrer" class="word-break"><%= v_url %> <i class="fas fa-external-link-alt"></i></a></p>
+            <% } else { %>
+              <p class="pt-3 pb-2"><%- volunteer %></p>
+          <% } %>
+
+          <h3 class="border-bottom fs-5 mt-1 pb-2"><i class="fas fa-gifts"></i> <ruby>応援<rt>おうえん</rt></ruby>する（<ruby>寄付<rt>きふ</rt></ruby>）</h3>
+
+          <% if (d_url && d_url.trim().length > 0) { %>
+            <p class="pt-3 pb-2"><%- donation %><br><a href="<%= d_url %>" target="_blank" rel="noopener noreferrer" class="word-break"><%= d_url %> <i class="fas fa-external-link-alt"></i></a></p>
+            <% } else { %>
+              <p class="pt-3 pb-2"><%- donation %></p>
+          <% } %>
+
+        </div>
+      </div>
+    </main>
+    <%- include("../_share/advertisement.ejs") %>
+    <%- include("../_share/footer.ejs") %>
+
+  </div>
+  <%- include("../_share/javascripts.ejs") %>
+</body>
+
+</html>
