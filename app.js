@@ -37,10 +37,11 @@ app.use(cookie());
 app.use(session({
   store: new MySQLStore({
     host: dbconfig.HOST,
-    port: dbconfig.PORT,
     user: dbconfig.USERNAME,
     password: dbconfig.PASSWORD,
-    database: dbconfig.DATABASE
+    database: dbconfig.DATABASE,
+    port: dbconfig.PORT,
+    ssl: dbconfig.SSL
   }),
   cookie: {
     secure: IS_PRODUCTION
