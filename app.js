@@ -1,5 +1,6 @@
 const IS_PRODUCTION = process.env.NODE_ENV === "production";
 const appconfig = require("./config/application.config.js");
+const mysql = require('mysql2');
 const dbconfig = require("./config/mysql.config.js");
 const path = require("path");
 const logger = require("./lib/log/logger.js");
@@ -31,6 +32,29 @@ app.use("/public", express.static(path.join(__dirname, "/public")));
 
 // Set access log
 app.use(accesslogger());
+
+// データベース接続のテスト
+const testConnection = () => {
+  const testConn = mysql.createConnection({
+    host: dbconfig.HOST,
+    user: dbconfig.USERNAME,
+    password: dbconfig.PASSWORD,
+    database: dbconfig.DATABASE,
+    port: dbconfig.PORT,
+    ssl: dbconfig.SSL
+  });
+
+  testConn.connect(err => {
+    if (err) {
+      console.error('データベース接続エラー: ', err);
+    } else {
+      console.log('データベースに接続されました');
+    }
+    testConn.end();
+  });
+};
+
+testConnection();
 
 // Set middleware
 app.use(cookie());
