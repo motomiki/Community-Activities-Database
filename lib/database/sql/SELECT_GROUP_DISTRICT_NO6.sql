@@ -14,4 +14,5 @@ LEFT JOIN m_category mc ON tgc.category_id = mc.id
 WHERE
   mc.parent_id = 147
 GROUP BY tg.id
-ORDER BY tg.id DESC;
+ORDER BY tg.id DESC
+LIMIT ?, ?;

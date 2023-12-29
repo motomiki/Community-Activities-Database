@@ -3,7 +3,7 @@
 
 <head>
   <%- include("../_share/metadata.ejs") %>
-  <title>Search</title>
+  <title>第５地域</title>
   <%- include("../_share/stylesheets.ejs") %>
 </head>
 
@@ -13,19 +13,6 @@
   <%- include("../_share/navbar.ejs") %>
 
   <main role="main" class="container">
-    <div>
-      <form action="/search" method="GET" class="mt-5 mb-5">
-        <div class="form-group row justify-content-center">
-          <div class="input-group mt-3 mb-3 col-sm-8">
-            <input type="text" class="form-control" id="keyword" name="keyword" value="<%= keyword %>" autofocus />
-            <div class="input-group-append">
-              <button class="btn btn-secondary" type="submit"><i class="fa fa-fw fa-search"></i></button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <% for (var item of results) { %>
       <%- include("./item.ejs", item) %>
@@ -37,12 +24,12 @@
         <% for(var i = 1; i <= pagenation.max; i++) { %>
           <% if ( pagenation.current !== i) { %>
           <% if ( i <= 3 || (pagenation.current - 3 < i && i < pagenation.current + 3) || pagenation.max - 3 < i ) {%>
-          <li class="page-item"><a class="page-link" href="/search/?keyword=<%= keyword %>&page=<%= i %>"><%= i %></a></li>
+          <li class="page-item"><a class="page-link" href="/district-5/?page=<%= i %>"><%= i %></a></li>
           <% } else {%>
           .
           <% } %>
           <% } else {%>
-          <li class="page-item active"><span class="page-link disabled"><%= i %></span></li>
+            <li class="page-item active"><span class="page-link disabled"><%= i %></span></li>
           <% } %>
         <% } %>
       </ul>
