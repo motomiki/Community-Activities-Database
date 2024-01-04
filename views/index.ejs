@@ -3,6 +3,8 @@
 <head>
 	<%- include("./_share/metadata.ejs") %>
   <title>ねりキッズ探検団</title>
+	<meta name="author" content="Kimitomo Tadano">
+	<meta name="description" content="練馬区のユニークな冒険データベースで、子どもたちの好奇心をくすぐる探検をしよう！地域の隠れた魅力を家族で楽しく発見し、笑顔溢れる体験を共有。子どもたちにとっての楽しい遊び場と、子育て世代のサポートが交差するコミュニティーで、心温まる居場所を見つけましょう。" />
 	<%- include("./_share/stylesheets.ejs") %>
 	<link rel="stylesheet" href="/public/stylesheets/index.css">
 </head>
@@ -34,6 +36,11 @@
 									</div>
 								</div>
 							</form>
+							<div>
+								<p class="py-4 px-2 shadow-sm">
+									ユーザー<ruby>側<rt>がわ</rt></ruby>からデータを<ruby>送信<rt>そうしん</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>がなく、また<ruby>個人<rt>こじん</rt></ruby><ruby>情報<rt>じょうほう</rt></ruby>を<ruby>扱<rt>あつか</rt></ruby>っていないため、<ruby>暗号化<rt>あんごうか</rt></ruby><ruby>通信<rt>つうしん</rt></ruby>（https://）の<ruby>設定<rt>せってい</rt></ruby>はしておりませんが、<ruby>当<rt>とう</rt></ruby>サイトは<ruby>安全<rt>あんぜん</rt></ruby>にご<ruby>利用<rt>りよう</rt></ruby>いただけます。また、<ruby>当<rt>とう</rt></ruby>サイトの<ruby>運営<rt>うんえい</rt></ruby>にご<ruby>協力<rt>きょうりょく</rt></ruby>いただける<ruby>企業<rt>きぎょう</rt></ruby>や<ruby>団体<rt>だんたい</rt></ruby>の<ruby>方々<rt>かたがた</rt></ruby>には、<ruby>当<rt>とう</rt></ruby>サイトにバナー<ruby>広告<rt>こうこく</rt></ruby>を<ruby>掲載<rt>けいさい</rt></ruby>していただくことが<ruby>可能<rt>かのう</rt></ruby>です。
+								</p>
+							</div>
 					</div>
 
 					<!-- パソコン用のタブ：mdサイズ以上のデバイスでのみ表示 -->
@@ -53,7 +60,7 @@
 				</div>
 			</main>
 			<div class="container">
-				<div class="row py-5">
+				<div class="row pt-4 pb-2">
 					<div class="col-md-12">
 						<h2 class="text-center"><ruby>住<rt>す</rt></ruby>んでいる<ruby>地<rt>ち</rt></ruby><ruby>区<rt>く</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んでね</h2>
 					</div>
@@ -186,31 +193,34 @@
 							</div>
 						</div>
 					</div>
-					<div class="col mb-3">
+					<div class="col">
 						<div class="card">
 							<div class="card-body">
-								<h5 class="card-title mt-5"><ruby>都市<rt>とし</rt></ruby><ruby>計画<rt>けいかく</rt></ruby>マスタープランの<ruby>地域区分<rt>ちいきくぶん</rt></ruby>を<ruby>参考<rt>さんこう</rt></ruby>にしています。</h5>
+								<h5 class="card-title"><ruby>都市<rt>とし</rt></ruby><ruby>計画<rt>けいかく</rt></ruby>マスタープランの<ruby>地域区分<rt>ちいきくぶん</rt></ruby>を<ruby>参考<rt>さんこう</rt></ruby>にしています。</h5>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="container mt-5">
+			<%- include("./_share/publish.ejs") %>
+			<div class="container mt-4">
 				<h2 class="text-center mb-4">サポートをお<ruby>願<rt>ねが</rt></ruby>いします</h2>
 				<div class="row">
 					<div class="col-md-6 col-sm-12 mb-3">
-						<p>ねりキッズ<ruby>探検団<rt>たんけんだん</rt></ruby>の<ruby>活動<rt>かつどう</rt></ruby><ruby>団体<rt>だんたい</rt></ruby><ruby>紹介<rt>しょうかい</rt></ruby>ページでは、<ruby>掲載<rt>けいさい</rt></ruby><ruby>費用<rt>ひよう</rt></ruby>を<ruby>無料<rt>むりょう</rt></ruby>で<ruby>承<rt>うけたまわ</rt></ruby>っております。
+						<p><ruby>放課後<rt>ほうかご</rt></ruby>キャンパスクラブを<ruby>応援<rt>おうえん</rt></ruby>して、<ruby>子<rt>こ</rt></ruby>どもたちのサポーターになりませんか？</p>
+						<p>
+							<ruby>放課後<rt>ほうかご</rt></ruby>キャンパスクラブでは、すべての<ruby>子<rt>こ</rt></ruby>どもたちに<ruby>対<rt>たい</rt></ruby>して、<ruby>放課後<rt>ほうかご</rt></ruby>に<ruby>安全<rt>あんぜん</rt></ruby>で<ruby>充実<rt>じゅうじつ</rt></ruby>した<ruby>居場所<rt>いばしょ</rt></ruby>を<ruby>提供<rt>ていきょう</rt></ruby>するためのサポートを<ruby>必要<rt>ひつよう</rt></ruby>としています。<ruby>私<rt>わたし</rt></ruby>たちの<ruby>活動<rt>かつどう</rt></ruby>は、<ruby>子<rt>こ</rt></ruby>どもたち<ruby>一人<rt>ひとり</rt></ruby><ruby>一人<rt>ひとり</rt></ruby>の<ruby>成長<rt>せいちょう</rt></ruby>と<ruby>幸<rt>しあわ</rt></ruby>せを<ruby>支援<rt>しえん</rt></ruby>することに<ruby>重点<rt>じゅうてん</rt></ruby>を<ruby>置<rt>お</rt></ruby>いており、あなたの<ruby>温<rt>あたた</rt></ruby>かい<ruby>手助<rt>てだす</rt></ruby>けが<ruby>子<rt>こ</rt></ruby>どもたちの<ruby>未来<rt>みらい</rt></ruby>を<ruby>明<rt>あか</rt></ruby>るく<ruby>照<rt>て</rt></ruby>らすことになります。ボランティア<ruby>参加<rt>さんか</rt></ruby>、<ruby>会員<rt>かいいん</rt></ruby>としての<ruby>支援<rt>しえん</rt></ruby>、<ruby>物資<rt>ぶっし</rt></ruby>や<ruby>金銭<rt>きんせん</rt></ruby><ruby>的<rt>てき</rt></ruby>な<ruby>寄付<rt>きふ</rt></ruby>など、さまざまな<ruby>形<rt>かたち</rt></ruby>でのご<ruby>協力<rt>きょうりょく</rt></ruby>をお<ruby>待<rt>ま</rt></ruby>ちしています。
 						</p>
-						<p><ruby>掲載<rt>けいさい</rt></ruby>をご<ruby>希望<rt>きぼう</rt></ruby>の<ruby>団体<rt>だんたい</rt></ruby>は、<ruby>下記<rt>かき</rt></ruby>のボタンをクリックして<ruby>表示<rt>ひょうじ</rt></ruby>されるフォームから<ruby>情報<rt>じょうほう</rt></ruby>をお<ruby>送<rt>おく</rt></ruby>りください。
-						</p>
+						<p><ruby>子<rt>こ</rt></ruby>どもたち<ruby>一人<rt>ひとり</rt></ruby><ruby>一人<rt>ひとり</rt></ruby>の<ruby>笑顔<rt>えがお</rt></ruby>のために、どうかご<ruby>支援<rt>しえん</rt></ruby>をご<ruby>検討<rt>けんとう</rt></ruby>ください。</p>
+
 						<!-- パソコン用のタブ：mdサイズ以上のデバイスでのみ表示 -->
-						<div class="col-6 mx-auto my-5 d-none d-md-block">
-							<a href="#" class="background_btn01">掲載をご希望の団体はこちら</a>
+						<div class="col-6 mx-auto my-4 d-none d-md-block">
+							<a href="https://www.as-campusclub.org/recruit/#i-2" class="background_btn01" target="_blank" rel="noreferrer noopener">応援する</a>
 						</div><!-- END -->
 
 						<!-- スマホ用のタブ：mdサイズ未満のデバイスでのみ表示 -->
-						<div class="mx-auto my-5 d-block d-md-none">
-							<a href="#" class="background_btn01">掲載をご希望の団体はこちら</a>
+						<div class="mx-auto my-4 d-block d-md-none">
+							<a href="https://www.as-campusclub.org/recruit/#i-2" class="background_btn01" target="_blank" rel="noreferrer noopener">応援する</a>
 						</div><!-- END -->
 					</div>
 					<div class="col-md-6 col-sm-12 mb-3">
@@ -219,12 +229,12 @@
 						</p>
 						<p>お<ruby>問<rt>と</rt></ruby>い<ruby>合<rt>あわ</rt></ruby>せは、<ruby>下記<rt>かき</rt></ruby>のボタンをクリックして<ruby>表示<rt>ひょうじ</rt></ruby>されるフォームまでお<ruby>願<rt>ねが</rt></ruby>いいたします。</p>
 						<!-- パソコン用のタブ：mdサイズ以上のデバイスでのみ表示 -->
-						<div class="col-6 mx-auto mt-5 d-none d-md-block">
+						<div class="col-6 mx-auto mt-4 d-none d-md-block">
 							<a href="#" class="background_btn01">バナー広告のお問い合せはこちら</a>
 						</div><!-- END -->
 
 						<!-- スマホ用のタブ：mdサイズ未満のデバイスでのみ表示 -->
-						<div class="mx-auto mt-5 d-block d-md-none">
+						<div class="mx-auto mt-4 d-block d-md-none">
 							<a href="#" class="background_btn01">バナー広告のお問い合せはこちら</a>
 						</div><!-- END -->
 					</div>
