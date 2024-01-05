@@ -17,10 +17,12 @@ SELECT
   group_category.email,
   group_category.tel,
 	group_category.created,
-  REPLACE(group_category.volunteer, '\n', '<br>') AS volunteer,
+  group_category.volunteer,
 	group_category.v_url,
-  REPLACE(group_category.donation, '\n', '<br>') AS donation,
+  group_category.donation,
 	group_category.d_url,
+	group_category.title_name,
+	group_category.description,
   GROUP_CONCAT(m_category.name separator ', ') as categories
 FROM
 (
